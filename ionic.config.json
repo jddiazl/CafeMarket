@@ -1,0 +1,15 @@
+{
+  "name": "CafeMarket",
+  "app_id": "03d8d6ab",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
