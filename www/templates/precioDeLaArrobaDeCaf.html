@@ -1,0 +1,24 @@
+<ion-view title="Precio de la Arroba de Café" id="page4">
+  <ion-content padding="true" class="has-header">
+      <div ng-controller="precioDollar">         
+          <ul>
+            <li>
+              <p> El precio del {{ myDataDll.name }} hoy es de {{ myDataDll.data[0][1] | number:0}} pesos colombianos</p>
+              <div ng-controller="precioCafe">         
+                  <ul>
+                        <h4 style="color:rgba(226, 7, 117, 0.877);">El precio del {{myDataCff.name}} hoy es de {{ myDataCff.data[0][4] }} centavos de Dolar la libra</p>                                                                    
+                    <h3>Su café se puede vender hoy en: ${{ ((((((myDataCff.data[0][4] +15-10)/100)*myDataDll.data[0][1])/0.453592)/1.3528571429)*12.5)| number:0  }} pesos la arroba.</p>
+                  </ul>   
+                </div>    
+            </li>
+          </ul>    
+      </div>
+      
+      <!--<div ng-controller="SpicyController">
+          <button ng-click="chiliSpicy()">Chili</button>
+          <button ng-click="jalapenoSpicy()">Jalapeño</button>
+          <p>The food is {{spice}} spicy!</p>
+         </div> 
+         -->
+  </ion-content>
+</ion-view>

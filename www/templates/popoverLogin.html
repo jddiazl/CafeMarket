@@ -1,0 +1,34 @@
+<ion-popover-view>
+  <ion-header-bar>
+     <h1 class = "title">Inicio de sesión</h1>
+  </ion-header-bar>
+  <ion-content padding="'true'" class="has-header">
+    <form class="list" >
+        <ion-list>
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+      
+      <!-- here we create a user object and store email as its property -->
+                <input ng-model="user.email" type="email" placeholder="" >
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+      
+      <!-- user object -->
+                <input ng-model="user.password" type="password" placeholder="">
+            </label>
+        </ion-list>
+        <!-- <div class="spacer" style="height: 40px;"></div>
+  
+  login() function is called -->
+  <div  align="center">
+        <button  class="button button-stable button-block" ng-click="login(); closePopover()">Inicia sesión</button>
+        <button  class="button button-stable button-block" ng-click=" closePopover();">o regístrate</button>
+       <!-- a link to register page
+ <a href="#/page5" class="button button-stable button-block">Or create an account</a> -->
+      </div>
+    </form>
+</ion-content>
+
+</ion-popover-view>
+ 
